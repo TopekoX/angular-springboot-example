@@ -1,0 +1,20 @@
+<h1 class="mt-5">Daftar Person</h1>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nama Depan</th>
+        <th scope="col">Nama Belakang</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of person">
+            <th scope="row">{{ p.id }}</th>
+            <td>{{ p.namaDepan }}</td>
+            <td>{{ p.namaBelakang }}</td>
+            <td>{{ p.email }}</td>
+        </tr>      
+    </tbody>
+  </table>
